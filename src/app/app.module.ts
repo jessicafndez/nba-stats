@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 //routes
-import { RouterModule, Routes } from '@angular/router';
+import { routing } from './app-routing/app-routing.module';
 
 //components
 import { AppComponent } from './app.component';
@@ -15,7 +15,8 @@ import { TeamsComponent } from './teams/teams.component';
     TeamsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
